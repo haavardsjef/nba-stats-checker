@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 import TitleBar from "frameless-titlebar";
+import DetailedView from "./components/detailedview";
+import "./App.css";
 
 const remote = window.require("electron").remote;
 const currentWindow = remote.getCurrentWindow();
 
 function App() {
+  const [selectedPlayer, setSelectedPlayer] = useState(1); // Selected player ID
+
   return (
     <div>
       <header>
@@ -34,7 +39,9 @@ function App() {
       <div className="wrapper">
         <Router>
           <Switch>
-            <Route path="/player"></Route>
+            <Route path="/player">
+              <DetailedView player={selectedPlayer} />
+            </Route>
             <Route path="/"></Route>
           </Switch>
         </Router>
