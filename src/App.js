@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import TitleBar from "frameless-titlebar";
 
 const remote = window.require("electron").remote;
@@ -30,6 +31,14 @@ function App() {
           }}
         />
       </header>
+      <div className="wrapper">
+        <Router>
+          <Switch>
+            <Route path="/player"></Route>
+            <Route path="/"></Route>
+          </Switch>
+        </Router>
+      </div>
     </div>
   );
 }
