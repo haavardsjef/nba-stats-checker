@@ -53,8 +53,8 @@ export default function DetailedView({ player }) {
     <div>
       <div className="container">
         <BackBtn />
-        <h1>{player.name}Lebron James</h1>
-        <h3>{player.team}LAL</h3>
+        <h1>{player.name}</h1>
+        <h3>{player.team}</h3>
         <div className="statistics">
           <Statistic name="Games played" value={stats.games_played} />
           <Statistic name="Minutes per game" value={stats.min} />
