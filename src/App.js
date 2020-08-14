@@ -1,6 +1,6 @@
 // Functional imports
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Axios from "axios";
 
 // Component imports
@@ -75,6 +75,7 @@ function App() {
                   id="info-tip"
                   src={infoIcon}
                   height="30px"
+                  alt="info-icon"
                   data-tip="This app uses the balldontlie API which updates live every 10 minutes"
                   // The data-tip prop is added by ReactTooltip
                 />

@@ -6,7 +6,10 @@
   "homepage": "./",
   "main": "public/electron.js",
   "build": {
-    "appId": "nbastats.app"
+    "appId": "nbastats.app",
+    "win": {
+      "icon": "build/icon.png"
+    }
   },
   "private": true,
   "dependencies": {

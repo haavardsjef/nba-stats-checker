@@ -35,7 +35,7 @@ export default function DetailedView({ player }) {
   useEffect(() => {
     // Load player stats on first render
     getStats(player.id);
-  }, []);
+  }, [player.id]);
 
   function getStats(playerId) {
     // Get stats from balldontlie API, if no stats are returned will use the fallback stats
@@ -85,7 +85,7 @@ export default function DetailedView({ player }) {
 function BackBtn() {
   return (
     <Link to="/home">
-      <img id="back-btn" src={backIcon} height="40px" />
+      <img id="back-btn" src={backIcon} height="40px" alt="back-arrow" />
     </Link>
   );
 }
