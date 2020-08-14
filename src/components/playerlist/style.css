@@ -1,0 +1,25 @@
+.player-list {
+  width: 100%;
+  margin-top: 1em;
+  display: grid; /* 1 */
+  grid-template-columns: repeat(auto-fill, 150px); /* 2 */
+  grid-gap: 1.5em; /* 3 */
+  justify-content: center; /* 4 */
+}
+
+.player {
+  border: 1px solid rgba(0, 0, 0, 0);
+  min-height: 0;
+  width: 150px;
+  padding: 4px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.player:hover {
+  border-color: black;
+}
+
+.player-link {
+  text-decoration: none;
+  color: inherit;
+}

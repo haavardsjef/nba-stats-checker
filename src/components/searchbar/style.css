@@ -1,0 +1,11 @@
+#search-bar {
+  width: 100%;
+  padding: 1em;
+  border: none;
+  border-bottom: 2px solid #34495e;
+  font-size: 20px;
+}
+
+#search-bar:focus {
+  outline: none;
+}
