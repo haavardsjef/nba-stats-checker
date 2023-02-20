@@ -1,5 +1,7 @@
 # NBA Stats app
 
+![Image illustrating how the application looks.](./assets/nba-stats-tracker.png)
+
 A simple native application for quickly looking up season statistics for NBA players. This application is built mainly for personal use, as the official NBA website is frustratingly slow.
 
 The application is built with electron and react, and can be compiled to:
